@@ -5,3 +5,29 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    background-color: blue;
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar{
+    flex-direction: column;
+    background-color: black;
+    width: 230px;    
+    flex-shrink: 0;
+    
+}
+
+.home{
+    flex-grow: 1;
+    overflow: auto;
+}
