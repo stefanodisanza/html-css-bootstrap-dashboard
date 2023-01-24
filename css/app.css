@@ -13,7 +13,7 @@
 }
 
 .content{
-    background-color: blue;
+    background-color: #F8F9FA;
     flex-grow: 1;
     display: flex;
     overflow: hidden;
@@ -21,7 +21,8 @@
 
 .sidebar{
     flex-direction: column;
-    background-color: black;
+    background-color: #051D34;
+    background-image: url(../img/sidebar-bg.png);
     width: 230px;    
     flex-shrink: 0;
     
@@ -31,3 +32,13 @@
     flex-grow: 1;
     overflow: auto;
 }
+
+.nav-sidebar{
+    margin-bottom: auto;
+}
+
+.top-section{
+    background-color: #1D72E7;
+}
+
+
