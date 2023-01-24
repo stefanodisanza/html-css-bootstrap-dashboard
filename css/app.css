@@ -1,3 +1,11 @@
+/* *{
+    color: white;
+} */
+
+.text-gray{
+    color: #5A5858;
+}
+
 .container-nav{
     background-color: #F8F9FA;       
     flex-shrink: 0;
@@ -41,4 +49,7 @@
     background-color: #1D72E7;
 }
 
-
+.col-8,
+.col-4{
+    border: 2px solid black;
+}
