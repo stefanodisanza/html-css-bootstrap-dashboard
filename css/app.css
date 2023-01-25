@@ -29,9 +29,13 @@
     flex-direction: column;
     background-color: #051D34;
     background-image: url(../img/sidebar-bg.png);
-    width: 230px;    
+    width: 70px;    
     flex-shrink: 0;
     
+}
+
+.nav-text-show{
+    display: none;
 }
 
 .home{
@@ -52,3 +56,13 @@
     border: 2px solid black;
 }
 
+@media (min-width: 768px) {
+    .sidebar{
+        width: 230px;
+
+    }
+    .nav-text-show{
+        display: block;
+      
+    }
+}
