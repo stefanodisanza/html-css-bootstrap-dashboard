@@ -1,6 +1,4 @@
-/* *{
-    color: white;
-} */
+
 
 .text-gray{
     color: #5A5858;
@@ -49,7 +47,7 @@
     background-color: #1D72E7;
 }
 
-.col-8,
-.col-4{
+.col-md-8,
+.col-md-4{
     border: 2px solid black;
 }
