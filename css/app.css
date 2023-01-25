@@ -58,7 +58,6 @@ img{
 }
 
 
-
 @media (min-width: 768px) {
     .sidebar{
         width: 230px;
@@ -68,4 +67,6 @@ img{
         display: block;
       
     }
+
+
 }
