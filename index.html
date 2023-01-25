@@ -39,7 +39,7 @@
                   
                   <li class="nav-item dropdown">
                     <a class="nav-link text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-bell text-warning"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end text-muted">
                       <li><a class="dropdown-item text-muted" href="#">Profilo</a></li>
@@ -59,35 +59,35 @@
     <div class="content">
 
         <!-- SIDEBAR -->
-        <div class="sidebar">
+        <div class="sidebar d-flex flex-column justify-content-between">
             <div class="nav-sidebar">
                 <ul class="nav flex-column d-flex align-items-center py-4 ">
                     <li class="nav-item ">
-                    <a class="nav-link active text-white " aria-current="page" href="#">
+                    <a class="nav-link active text-white d-flex align-items-center" aria-current="page" href="#">
                         <i class="fa-solid fa-house me-2"></i>
-                        Home
+                        <span class="nav-text-show">Home</span>
                     </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
+                    <a class="nav-link text-white d-flex align-items-center" href="#">
                         <i class="fa-solid fa-chart-simple me-2"></i>
-                        Stats
+                        <span class="nav-text-show">Stats</span>
                     </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
+                    <a class="nav-link text-white d-flex align-items-center" href="#">
                         <i class="fa-solid fa-signal me-2"></i>
-                        Signal
+                        <span class="nav-text-show">Signal</span>
                     </a>
                     </li>                
                 </ul>
             </div>  
-            <div class="impostazioni"> 
+            <div class="impostazioni pb-4"> 
                 <ul class="nav flex-column d-flex align-items-center  ">
                     <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">
+                    <a class="nav-link active text-white d-flex align-items-center" aria-current="page" href="#">
                         <i class="fa-solid fa-gear me-2"></i>
-                        Admin
+                        <span class="nav-text-show">Admin</span>
                     </a>
                     </li>                           
                 </ul>
@@ -115,16 +115,16 @@
                         <span class="badge rounded-pill text-bg-success m-2">
                           3 app
                         </span>
-                        <i class="fa-solid fa-angles-right"></i>
-                        <span class="badge rounded-pill text-bg-success m-2">
+                        <i class="fa-solid fa-angles-right "></i>                        
+                        <span class="badge rounded-pill text-bg-success m-2 nav-text-show">
                           Boolean mobile app
                         </span>
-                        <span class="badge rounded-pill text-bg-success m-2">
+                        <span class="badge rounded-pill text-bg-success m-2 nav-text-show">
                           Boolean web app
                         </span>
-                        <span class="badge rounded-pill text-bg-success m-2">
+                        <span class="badge rounded-pill text-bg-success m-2 nav-text-show">
                           Boolean blog app
-                        </span>
+                        </span>                        
                       </div>
                       
                     </div>
@@ -135,11 +135,17 @@
                                                     
                 </div>
                 
-                <div class="col-md-3 col-">
-                  Studenti online negli ultimi 30 minuti 
+                <div class="col-md-3 col- text-white ">
+                  <span>
+                    Studenti online negli ultimi 30 minuti
+                  </span>
+                  <h2 class="my-3">125</h2>
                 </div>
-                <div class="col-md-3 col-">
-                  Nuovo studente                  
+                <div class="col-md-3 col- text-white">
+                  <span>Nuovo studente</span>                  
+                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="fa-regular fa-square-plus"></i>
+                  </button>
                 </div>
               </div>
 
@@ -153,7 +159,124 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-8 col-">
-                  Prossime classi
+                  <div class="card">
+                    <div class="card-header">
+                      <h2>Prossime classi</h2>
+                    </div>
+                    <div class="card-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col" class="text-center">Data inizio</th>
+                            <th scope="col" class="text-center">ROI</th>
+                            <th scope="col" class="text-center">Stato</th>
+                            <th scope="col" class="text-center">Azioni</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <img class="class-avatar me-2" src="./img/class-avatar.jpg" alt="">
+                              <span>Classe 75</span>
+                            </td>
+                            <td class="text-center">17 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center">
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+                            </td>
+                            <td class="text-center">
+                              <i class="fa-solid fa-pen border border-secondary rounded-3 p-2"></i>
+                              <i class="fa-solid fa-trash border border-secondary rounded-3 p-2"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <img class="class-avatar me-2" src="./img/class-avatar.jpg" alt="">
+                              <span>Classe 76</span>
+                            </td>
+                            <td class="text-center">17 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center">
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+                            </td>
+                            <td class="text-center">antani</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <img class="class-avatar me-2" src="./img/class-avatar.jpg" alt="">
+                              <span>Classe 77</span>
+                            </td>
+                            <td class="text-center">18 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center">
+                              <span class="badge rounded-pill text-bg-warning text-white">Process</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <img class="class-avatar me-2" src="./img/class-avatar.jpg" alt="">
+                              <span>Classe 78</span>
+                            </td>
+                            <td class="text-center">18 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center">
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <img class="class-avatar me-2" src="./img/class-avatar.jpg" alt="">
+                              <span>Classe 79</span>
+                            </td>
+                            <td class="text-center">19 Feb 2022</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center">
+                              <span class="badge rounded-pill text-bg-danger">Failed</span>
+                            </td>
+                            <td class="text-center">
+                             da riempire
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <img class="class-avatar me-2" src="./img/class-avatar.jpg" alt="">
+                              <span>Classe 80</span>
+                            </td>
+                            <td class="text-center">19 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center">
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+                            </td>
+                            <td class="text-center">antani</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <img class="class-avatar me-2" src="./img/class-avatar.jpg" alt="">
+                              <span>Classe 81</span>
+                            </td>
+                            <td class="text-center">20 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center">
+                              <span class="badge rounded-pill text-bg-danger">Failed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <img class="class-avatar me-2" src="./img/class-avatar.jpg" alt="">
+                              <span>Classe 82</span>
+                            </td>
+                            <td class="text-center">20 Feb 2021</td>
+                            <td class="text-center">20%</td>
+                            <td class="text-center">
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
                 </div>
                 <div class="col-md-4 col-">
                   Todo

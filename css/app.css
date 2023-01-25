@@ -1,4 +1,10 @@
+img{
+    max-width: 100%;
+}
 
+.class-avatar{
+    width: 30px;
+}
 
 .text-gray{
     color: #5A5858;
