@@ -49,6 +49,7 @@ img{
     margin-bottom: auto;
 }
 
+
 .top-section{
     background-color: #1D72E7;
 }
@@ -60,12 +61,29 @@ img{
         width: 230px;
 
     }
-       
+      
+    .nascondi-plus{
+        display: none !important;
+    }
 
 }
 
 @media (max-width: 767.98px) {
     .nav-text-show{
-        display: none;
+        display: none !important;
+        
+    }    
+
+}
+
+@media (max-width: 575.98px) {
+    .nuovo-studente{
+        order: -1;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .nuovo-studente{
+        order: -1;
     }
 }
